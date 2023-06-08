@@ -1,149 +1,358 @@
-/*=====================================================
-9. wpo-service-single
-======================================================*/
-.wpo-service-single-area{
+/*--------------------------------------------------------------
+8. wpo-service-single-section
+--------------------------------------------------------------*/
+
+.wpo-service-single-section{
+
+    @media(max-width:991px){
+      padding-bottom: 60px;
+    }
     .wpo-service-single-wrap{
-        .wpo-service-single-title{
-            h3{
-                font-weight: 600;
-                font-size: 35px;
-                line-height: 130.5%;
-                margin-bottom: 20px;
-                text-transform: capitalize;
+        img{
+            width: 100%;
+        }
+        .wpo-service-single-content{
+            .wpo-service-single-content-des{
+                padding: 60px 0;
 
                 @media(max-width:767px){
+                    padding: 35px 0;
+                }
+
+                h2{
+                    font-size: 33px;
+                    font-family: $heading-font;
+                    margin-bottom: 30px;
+                    font-weight: 700;
+
+                    @media(max-width:767px){
+                        font-size: 25px;
+                        margin-bottom: 16px;
+                    }
+                }
+
+                p{
+                    margin-bottom: 30px;
+                }
+                .wpo-service-single-sub-img{
+                    margin-top: 50px;
+                    ul{
+                        display: flex;
+                        list-style: none;
+                    }
+    
+                    li{
+                        padding-left: 10px;
+                        padding-right: 10px;
+    
+                        &:last-child{
+                            padding-left:10px;
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .wpo-solutions-section{
+            h2{
+                font-size: 33px;
+                font-family: $heading-font;
+                margin-bottom: 30px;
+                font-weight: 700;
+
+                @media(max-width:575px){
                     font-size: 25px;
                 }
             }
-        }
-        .wpo-service-single-item{
-            margin-bottom: 40px;
-            .wpo-service-single-main-img{
+            .wpo-solutions-item{
+                background: $white;
+                padding: 30px 25px;
                 margin-bottom: 30px;
-            }
+                box-shadow: 0px 5px 15px 0px rgba(62, 65, 159, 0.1);
 
-        }
-        .list-widget{
-            max-width: 590px;
+                .wpo-solutions-icon{
+                    .icon{
+                        width: 50px;
+                        height: 50px;
+                        img{
+                           width: 100%;
+                        }
+                    }
+                }
 
-            ul{
-                list-style: none;
+                .wpo-solutions-text{
+                    h2{
+                        font-size: 22px;
+                        font-weight: 600;
+                        margin: 20px 0;
 
-                li{
-                    padding: 10px 0;
-                    padding-left: 35px;
-                    position: relative;
+                        a{
+                            color: $dark-gray;
 
-                    &:before{
-                       position: absolute;
-                       left: 0;
-                       top: 50%;
-                       transform: translateY(-50%);
-                       width: 25px;
-                       height: 25px;
-                       line-height: 25px;
-                       border-radius: 50%;
-                       background: transparentize($theme-primary-color, .9);
-                       content: "\e64c";
-                       font-family: "themify";
-                       text-align: center;
-                       color: $theme-primary-color;
-                       font-size: 14px;
+                            &:hover{
+                                color: $theme-primary-color;
+                            }
+                        }
+                    }
+                    p{
+                        margin-bottom: 0;
                     }
                 }
             }
         }
 
-        .wpo-p-details-img{
-            margin-bottom: 10px;
-        }
-
-        .wpo-service-area{
-            padding-bottom: 0;
-
-            .wpo-service-item {
-                padding: 20px;
-                box-shadow: 0px 0px 20px 0px rgba(20, 33, 43, 0.1);
-
-                @media(max-width:1200px){
-                    padding: 20px 10px;
-                  }
-                @media(max-width:991px){
-                   margin-bottom: 20px;
-                }
-
-                h2{
-                    font-weight: 600;
-                    font-size: 22px;
-                    margin-bottom: 12px;
-                    margin-top: 10px;
-
-                    @media(max-width:1400px){
-                      font-size: 19px;
-                      margin-bottom: 10px;
-                    }
-                    @media(max-width:1200px){
-                      font-size: 17px;
-                      margin-bottom: 10px;
-                    }
-                    @media(max-width:991px){
-                      font-size: 22px;
-                    }
-                }
-                p{
-                    margin-bottom: 5px;
-                }
-
-                .fi{
-                    &:before{
-                        font-size: 40px;
-                        color: $theme-primary-color;
-                    }
-                }
-            }
-        }
-
-        .wpo-service-contact-area{
-            padding: 30px;
-            box-shadow: 0px 2px 8px 2px rgba(22, 14, 71, 0.1);
-            border-radius: 20px;
-            background: $white;
-
-            .wpo-contact-title{
+        .wpo-benefits-section{
+            padding-top: 30px;
+            h2{
+                font-size: 33px;
+                font-family: $heading-font;
                 margin-bottom: 30px;
-                h2{
-                    font-weight: 600;
-                }
+                font-weight: 700;
             }
 
-            .wpo-contact-form-area{
-                .col{
-                   margin-bottom: 30px;
+            .accordion{
+                border-top: 1px solid #e1e1e1;
+            }
+
+            .accordion-item{
+                border: 0;
+                border-bottom: 1px solid #e1e1e1;
+
+                .accordion-body{
+                    padding-left: 0;
+                    padding-right: 0;
                 }
-                .form-control{
-                    height: 50px;
-                    border:0 ;
-                    border-bottom: 1px solid $border-color-s2;
+
+                button{
+                    padding: 20px;
+                    border:0;
                     border-radius: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: 20px;
+                    color: $heading-color;
+                    text-align: left;
 
+                    &::after{
+                        background: none;
+                        font-family: "themify";
+                        content: "\e622";
+                        font-size: 15px;
+                        transform: rotate(0deg);
+                        font-weight: 700;
+                    }
+
+                    
+                    &.collapsed{
+                        color: #373b3e;
+
+                        &::after{
+                            content: "\e61a";
+                        }
+                    }
                     &:focus{
-                        outline: none;
                         box-shadow: none;
+                        outline: none;
+                        border-color: #e1e1e1;
+                        
                     }
-                }
-                textarea.form-control{
-                    height: 120px;
-                }
-                select.form-control{
-                    background: transparent url(../images/select-icon2.png) no-repeat calc(100% - 15px) center;
+
+                    
                 }
 
-                .submit-area{
-                    button{
-                        border-radius: 6px;
-                    }
+                .accordion-collapse{
+                    border: 0;
                 }
+            }
+
+            .accordion-button{
+                background: transparent;
             }
         }
     }
-} 
+    
+}
+.wpo-single-sidebar{
+    padding-left: 20px;
+
+    @media(max-width:991px){
+        padding-left: 0;
+        margin-top: 60px;
+    }
+
+    .widget{
+        padding: 30px 40px;
+        border: 1px solid #e1e1e1;
+        margin-bottom: 40px;
+
+        @media(max-width:1200px){
+            padding:20px;
+        }
+
+        h2{
+           font-size: 25px;
+           font-family: $heading-font;
+           position: relative;
+           text-align: center;
+           display: block;
+           margin-bottom: 30px;
+           font-weight: 700;
+
+        }
+
+        ul{
+            list-style: none;
+        }
+
+    }
+    .wpo-service-widget{
+        ul{
+
+            li{
+                a{
+                  display: block;
+                  font-size: 16px;
+                  color: $dark-gray;
+                  font-weight: 500;
+                  padding-left: 30px;
+                  position: relative;
+                  margin-bottom: 10px;
+                  &:before{
+                      position: absolute;
+                      left: 0;
+                      top: 50%;
+                      content: "";
+                      background: $theme-primary-color;
+                      width: 10px;
+                      height: 3px;
+                      transform: translateY(-50%);
+                  }
+
+                  &:hover{
+                      color: $theme-primary-color;
+                  }
+
+                  
+                }
+                &:last-child {
+                    a{
+                        margin-bottom: 10px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .wpo-newsletter-widget{
+        p{
+            font-size: 20px;
+            font-family: $heading-font;
+            color: $dark-gray;
+            text-align: center;
+        }
+        span{
+            font-size: 15px;
+            color: $cyan;
+            a{
+                color: $dark-gray;
+                font-weight: 700;
+                &:hover{
+                    color: $theme-primary-color;
+                }
+            }
+        }
+        .form{
+            input{
+                border: 0;
+                display: block;
+                width: 100%;
+                height: 50px;
+                @include rounded-border(50px);
+                border: 1px solid #e1e1e1;
+                padding: 15px;
+                text-align: center;
+
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+
+            button{
+                background: $theme-primary-color;
+                width: 100%;
+                height: 50px;
+                @include rounded-border(50px);
+                text-align: center;
+                color: $white;
+                border: none;
+                margin: 20px 0;
+            }
+            
+        }
+    }
+
+    .wpo-instagram-widget{
+        
+       ul{
+           display: flex;
+           flex-wrap: wrap;
+           li{
+            -ms-flex: 0 0 33.33%;
+            -webkit-box-flex: 0;
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            margin-bottom: 5px;
+            padding: 0px 3px;
+
+            img{
+                width: 100%;
+            }
+           }
+       }
+    
+    }
+
+    .wpo-contact-widget{
+        border: 0;
+        background: $theme-primary-color;
+
+        h2{
+            font-size: 36px;
+            font-weight: 700;
+            text-align: left;
+            color: $white;
+            margin-bottom: 20px;
+        }
+
+        p{
+            color: $white;
+            font-size: 18px;
+        }
+
+
+        a{
+            display:inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: $white;
+            padding-right: 90px;
+            position: relative;
+            margin-top: 10px;
+            background:$theme-primary-color-gradient-2;
+
+            &::before{
+                font-family: "themify";
+                content: "\e628";
+                font-size: 18px;
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

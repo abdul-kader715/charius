@@ -354,18 +354,21 @@
             padding-top: 30px;
 
             h2 {
-                @media (max-width:1550px) {
-                    font-size: 35px;
-                }
+                a{
 
-                @media (max-width:991px) {
-                    font-size: 28px;
-                    line-height: 35px;
-                }
-
-                @media (max-width:399px) {
-                    font-size: 20px;
-                    line-height: 30px;
+                    @media (max-width:1550px) {
+                        font-size: 35px;
+                    }
+    
+                    @media (max-width:991px) {
+                        font-size: 28px;
+                        line-height: 35px;
+                    }
+    
+                    @media (max-width:399px) {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
                 }
             }
         }
@@ -428,18 +431,21 @@
                 }
 
                 h2 {
-                    font-weight: 700;
-                    font-size: 26px;
-                    line-height: 35px;
+                    a{
 
-                    @media (max-width:991px) {
-                        font-size: 28px;
+                        font-weight: 700;
+                        font-size: 26px;
                         line-height: 35px;
-                    }
-
-                    @media (max-width:399px) {
-                        font-size: 20px;
-                        line-height: 30px;
+    
+                        @media (max-width:991px) {
+                            font-size: 28px;
+                            line-height: 35px;
+                        }
+    
+                        @media (max-width:399px) {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
                     }
                 }
 

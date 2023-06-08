@@ -419,6 +419,16 @@
     .container-fluid {
         padding: 0;
     }
+    &.s2{
+        padding-bottom: 90px;
+        @media (max-width:991px) {
+            padding-bottom: 60px;
+        }
+    
+        @media (max-width:767px) {
+            padding-bottom: 50px;
+        } 
+    }
 }
 
 .causes-top {
@@ -460,22 +470,24 @@
             text-align: left;
 
             h2 {
-                font-family: $heading-font;
-                font-weight: 700;
-                font-size: 40px;
-                line-height: 55px;
-                color: $white;
                 margin-bottom: 15px;
-
-                @media (max-width:1199px) {
-                    font-size: 34px;
-                    line-height: 50px;
+                a{
+                    font-family: $heading-font;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 55px;
+                    color: $white;
+                    @media (max-width:1199px) {
+                        font-size: 34px;
+                        line-height: 50px;
+                    }
+    
+                    @media (max-width:575px) {
+                        font-size: 25px;
+                        line-height: 35px;
+                    }
                 }
 
-                @media (max-width:575px) {
-                    font-size: 25px;
-                    line-height: 35px;
-                }
             }
 
             p {
@@ -557,6 +569,7 @@
                 align-content: center;
                 justify-content: space-between;
                 margin-top: 10px;
+
                 @media (max-width:399px) {
                     display: block;
                 }
@@ -604,36 +617,39 @@
         }
 
         h2 {
-            font-family: $heading-font;
-            font-weight: 700;
-            font-size: 35px;
-            line-height: 48px;
-            color: #323232;
             margin-top: -10px;
+            a{
+                font-family: $heading-font;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 48px;
+                color: #323232;
 
-            @media (max-width:1550px) {
-                font-size: 30px;
+                @media (max-width:1550px) {
+                    font-size: 30px;
+                }
+    
+                @media (max-width:1399px) {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+    
+                @media (max-width:1199px) {
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+    
+                @media (max-width:991px) {
+                    font-size: 28px;
+                    line-height: 35px;
+                }
+    
+                @media (max-width:399px) {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
             }
 
-            @media (max-width:1399px) {
-                font-size: 30px;
-                line-height: 40px;
-            }
-
-            @media (max-width:1199px) {
-                font-size: 24px;
-                line-height: 35px;
-            }
-
-            @media (max-width:991px) {
-                font-size: 28px;
-                line-height: 35px;
-            }
-
-            @media (max-width:399px) {
-                font-size: 20px;
-                line-height: 30px;
-            }
         }
 
         p {
@@ -708,6 +724,7 @@
                 display: flex;
                 align-content: center;
                 justify-content: space-between;
+
                 @media (max-width:399px) {
                     display: block;
                 }
@@ -1411,6 +1428,9 @@
         padding: 80px 0 0px;
     }
 
+    &.s2 {
+        margin-top: 0;
+    }
 }
 
 .wpo-testimonial-slider {
@@ -1648,7 +1668,26 @@
 }
 
 /* wpo-instagram-section */
-.wpo-instagram-section {}
+.wpo-instagram-section {
+    &.s2 {
+        padding-bottom: 90px;
+
+        @media (max-width:991px) {
+            padding-bottom: 60px;
+        }
+
+        @media (max-width:767px) {
+            padding-bottom: 80px;
+        }
+
+        .instagram-wrap {
+
+            .col {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
 
 .instagram-wrap {
 
@@ -1744,13 +1783,16 @@
             @media (max-width:1199px) {
                 padding: 20px;
             }
+
             @media (max-width:575px) {
                 left: 70%;
                 transform: translateX(-50%);
             }
+
             @media (max-width:400px) {
                 left: 50%;
             }
+
             span {
                 background: linear-gradient(180deg, #EBB011 0%, #ED861D 99.48%);
                 -webkit-background-clip: text;

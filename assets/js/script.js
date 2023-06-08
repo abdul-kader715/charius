@@ -1023,6 +1023,37 @@
         }, 200));
     });
 
+    // login
+
+    $(".reveal6").on('click', function() {
+        var $pwd = $(".pwd6");
+        if ($pwd.attr('type') === 'text') {
+            $pwd.attr('type', 'password');
+        } else {
+            $pwd.attr('type', 'text');
+        }
+    });
+
+
+    $(".reveal3").on('click', function() {
+        var $pwd = $(".pwd2");
+        if ($pwd.attr('type') === 'text') {
+            $pwd.attr('type', 'password');
+        } else {
+            $pwd.attr('type', 'text');
+        }
+    });  
+
+    $(".reveal2").on('click', function() {
+        var $pwd = $(".pwd3");
+        if ($pwd.attr('type') === 'text') {
+            $pwd.attr('type', 'password');
+        } else {
+            $pwd.attr('type', 'text');
+        }
+    });
+
+
 
 })(window.jQuery);
 

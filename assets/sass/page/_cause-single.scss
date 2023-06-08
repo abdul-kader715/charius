@@ -1,0 +1,150 @@
+/* wpo-case-details-area */
+.wpo-case-details-area{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     .donate-area-wrapper h3 {
+        font-size: 20px;
+        font-size: 1.25rem;
+        margin: 0 0 0.5em;
+      }
+      
+       .donate-area-wrapper h3 + p {
+        font-size: 14px;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 30px;
+        margin: 0 0 2em;
+      }
+      
+       .donate-area-wrapper h3 + p span {
+        background-color: #cd211d;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        font-size: 12px;
+        font-size: 0.75rem;
+        color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      
+       .donate-area-wrapper form[id*=give-form] .give-donation-amount {
+        margin: 0 0 15px;
+        clear: both;
+      }
+      
+       .donate-area-wrapper .give-form-type-multi .give-currency-symbol {
+        background-color: #f2f2f2;
+        height: 50px;
+        border: 1px solid #eee;
+        border-left: none !important;
+        line-height: 50px;
+        color: #242f6c;
+        padding: 0px 18px;
+        font-size: 18px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        float: left;
+      }
+      
+       .donate-area-wrapper #give-recurring-form .give-hidden,
+       .donate-area-wrapper form.give-form .give-hidden,
+       .donate-area-wrapper form[id*=give-form] .give-hidden,
+       .donate-area-wrapper .give-hidden {
+        display: none;
+      }
+      
+       .donate-area-wrapper form[id*=give-form] .give-donation-amount #give-amount,
+       .donate-area-wrapper form[id*=give-form] .give-donation-amount #give-amount-text {
+        height: 50px;
+        border: 1px solid #eee;
+      }
+      
+       .donate-area-wrapper .give-btn {
+        background: #eeeeee;
+        border: 0;
+        padding: 12px 20px;
+        color: #636363;
+        @inlcude transition-time(0.3s);
+      }
+      
+       .donate-area-wrapper .give-btn:hover,
+       .donate-area-wrapper .give-btn:focus {
+        background: #cd211d;
+        color: #fff;
+      }
+      
+       .donate-area-wrapper #give-recurring-form h3.give-section-break,
+       .donate-area-wrapper #give-recurring-form h4.give-section-break,
+       .donate-area-wrapper #give-recurring-form legend,
+       .donate-area-wrapper form.give-form h3.give-section-break,
+       .donate-area-wrapper form.give-form h4.give-section-break,
+       .donate-area-wrapper form.give-form legend,
+       .donate-area-wrapper form[id*=give-form] h3.give-section-break,
+       .donate-area-wrapper form[id*=give-form] h4.give-section-break,
+       .donate-area-wrapper form[id*=give-form] legend {
+        font-size: 15px;
+        margin-bottom: 2em;
+      }
+      
+       .donate-area-wrapper #give-recurring-form .form-row label,
+       .donate-area-wrapper form.give-form .form-row label,
+       .donate-area-wrapper form[id*=give-form] .form-row label {
+        font-weight: 600;
+        font-size: 14px;
+      }
+      
+       .donate-area-wrapper .give-input {
+        font-size: 14px !important;
+      }
+      
+       .donate-area-wrapper .give-submit {
+        background: #020202;
+        font-size: 16px;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 5px;
+      }
+
+      
+       .donate-area-wrapper textarea {
+        height: 150px;
+      }
+      
+       .case-info-area .goal-raised span {
+        display: inline-block;
+        padding-right: 8px;
+      }
+      
+      @media screen and (min-width: 1200px) {
+         .donate-area-wrapper,
+         .big-img {
+          padding-right: 25px;
+        }
+      }
+    
+      
+       .donate-area-wrapper h3 + p {
+        text-transform: none;
+        font-size: 16px;
+        font-weight: 500;
+      }
+}

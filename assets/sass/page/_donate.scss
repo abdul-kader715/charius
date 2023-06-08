@@ -191,6 +191,9 @@
     border-radius: 2px;
     border: none;
     border: 1px solid #ebebeb;
+    &:focus-visible {
+       outline: 0;
+    }
 }
 
 .wpo-payment-area .form-style input:focus {
