@@ -365,6 +365,23 @@
         fixedContentPos: false
     });
 
+ /*------------------------------------------
+          feda-slider
+    -------------------------------------------*/
+
+    $('.hero-slider-fade').slick({
+        dots: false,
+        arrows:false,
+        infinite: true,
+        speed: 500,
+        autoplay:true,
+        fade: true,
+        cssEase: 'linear'
+      });
+
+
+
+
     /*------------------------------------------
         = ACTIVE GALLERY POPUP IMAGE
     -------------------------------------------*/

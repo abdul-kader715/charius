@@ -818,7 +818,7 @@
 		bottom: auto;
 		top: 50%;
 		transform: translateY(-50%);
-		z-index: -1;
+		z-index: 1;
 		width: 858px;
 		height: 843px;
 
@@ -845,62 +845,40 @@
 		.bg-img {
 			animation: rotate 200s linear infinite;
 		}
-
-		.image-1 {
+		.feda-slider{
 			position: absolute;
 			left: 50%;
-			top: 50%;
-			height: 800px;
-			width: 400px;
+			top: 40%;
+			width: 600px;
+			height: 600px;
 			transform: translate(-50%, -50%);
 			z-index: 1;
 
 			@media (max-width:1399px) {
-				height: 590px;
-				width: 300px;
+				width: 500px;
+				height: 500px;
 			}
 
 			@media (max-width:991px) {
-				top: 72%;
+				top: 60%;
+				width: 450px;
+				height: 450px;
 			}
 
 			@media (max-width:575px) {
-				height: 200px;
-				width: 137px;
-			}
-
-			img {
-				animation: kenburn 25s 2s alternate infinite;
-			}
-		}
-
-		.image-2 {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			height: 810px;
-			width: 541px;
-			transform: translate(-50%, -50%);
-			z-index: 1;
-
-			@media (max-width:1399px) {
-				height: 590px;
-				width: 400px;
-			}
-
-			@media (max-width:991px) {
+				width: 250px;
+				height: 250px;
 				top: 70%;
 			}
-
-			@media (max-width:575px) {
-				height: 200px;
-				width: 200px;
-			}
+		}
+		
+		.image-item {
 
 			img {
-				animation: kenburn 25s 2s alternate infinite;
+				width: 100%;
 			}
 		}
+
 	}
 
 	.shape-icon-1 {
@@ -1050,11 +1028,6 @@
 		height: 600px;
 	}
 
-	.hero-container {}
-
-	.hero-inner {}
-
-	.swiper-container {}
 
 	.slide-title-sub {
 		h6 {
@@ -1126,6 +1099,7 @@
 	@media (max-width:991px) {
 		height: 850px;
 	}
+
 	@media (max-width:575px) {
 		height: 700px;
 	}
@@ -1134,13 +1108,16 @@
 		@media (max-width:991px) {
 			margin-top: 80px;
 		}
+
 		@media (max-width:767px) {
 			margin-top: 100px;
 		}
+
 		@media (max-width:575px) {
 			margin-top: 0;
 		}
 	}
+
 	.hero-slider-img {
 		right: 0;
 		top: 57%;
@@ -1181,10 +1158,12 @@
 				width: 400px;
 				height: 400px;
 			}
+
 			@media (max-width:991px) {
 				margin: 0 auto;
 				margin-top: 100px;
 			}
+
 			@media (max-width:575px) {
 				width: 280px;
 				height: 280px;
@@ -1208,6 +1187,7 @@
 					height: 286px;
 					width: 286px;
 				}
+
 				@media (max-width:575px) {
 					height: 150px;
 					width: 150px;
@@ -1245,6 +1225,7 @@
 			height: 150px;
 			width: 150px;
 		}
+
 		@media (max-width:575px) {
 			height: 100px;
 			width: 100px;
@@ -1280,6 +1261,7 @@
 		@media (max-width:1199px) {
 			transform: scale(2.5);
 		}
+
 		@media (max-width:575px) {
 			transform: scale(2);
 			left: 0px;
@@ -1293,27 +1275,3 @@
 	}
 }
 
-/*Animation for buyers landing page slider*/
-// @-webkit-keyframes firstChild {
-// 	0% {
-// 		left: 100%;
-// 		transform: scale(0.2) translate(-50%, -50%);
-// 	}
-
-// 	100% {
-// 		left:0;
-// 		transform: scale(0.2) translate(-50%, -50%);
-// 	}
-// }
-
-// @keyframes firstChild {
-// 	0% {
-// 		left: 100%;
-// 		transform: scale(0.2) translate(-50%, -50%);
-// 	}
-
-// 	100% {
-// 		left: 13%;
-// 		transform: scale(0.5) translate(-50%, -50%);
-// 	}
-// }

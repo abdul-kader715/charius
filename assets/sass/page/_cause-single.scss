@@ -1,5 +1,5 @@
 /* wpo-case-details-area */
-.wpo-case-details-area{
+.wpo-case-details-area {
 
 
 
@@ -9,142 +9,317 @@
 
 
 
+  .donate-area-top {
+    margin: 50px 0;
 
+    h2 {
+      font-family: $heading-font;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 48px;
+      color: #323232;
 
+      @media (max-width:1550px) {
+        font-size: 30px;
+      }
 
+      @media (max-width:1399px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
 
+      @media (max-width:1199px) {
+        font-size: 24px;
+        line-height: 35px;
+      }
 
+      @media (max-width:991px) {
+        font-size: 28px;
+        line-height: 35px;
+      }
 
-
-     .donate-area-wrapper h3 {
+      @media (max-width:399px) {
         font-size: 20px;
-        font-size: 1.25rem;
-        margin: 0 0 0.5em;
-      }
-      
-       .donate-area-wrapper h3 + p {
-        font-size: 14px;
-        font-size: 0.875rem;
-        text-transform: uppercase;
-        position: relative;
-        padding-left: 30px;
-        margin: 0 0 2em;
-      }
-      
-       .donate-area-wrapper h3 + p span {
-        background-color: #cd211d;
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
-        text-align: center;
-        font-size: 12px;
-        font-size: 0.75rem;
-        color: #fff;
-        border-radius: 50%;
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-      
-       .donate-area-wrapper form[id*=give-form] .give-donation-amount {
-        margin: 0 0 15px;
-        clear: both;
-      }
-      
-       .donate-area-wrapper .give-form-type-multi .give-currency-symbol {
-        background-color: #f2f2f2;
-        height: 50px;
-        border: 1px solid #eee;
-        border-left: none !important;
-        line-height: 50px;
-        color: #242f6c;
-        padding: 0px 18px;
-        font-size: 18px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        float: left;
-      }
-      
-       .donate-area-wrapper #give-recurring-form .give-hidden,
-       .donate-area-wrapper form.give-form .give-hidden,
-       .donate-area-wrapper form[id*=give-form] .give-hidden,
-       .donate-area-wrapper .give-hidden {
-        display: none;
-      }
-      
-       .donate-area-wrapper form[id*=give-form] .give-donation-amount #give-amount,
-       .donate-area-wrapper form[id*=give-form] .give-donation-amount #give-amount-text {
-        height: 50px;
-        border: 1px solid #eee;
-      }
-      
-       .donate-area-wrapper .give-btn {
-        background: #eeeeee;
-        border: 0;
-        padding: 12px 20px;
-        color: #636363;
-        @inlcude transition-time(0.3s);
-      }
-      
-       .donate-area-wrapper .give-btn:hover,
-       .donate-area-wrapper .give-btn:focus {
-        background: #cd211d;
-        color: #fff;
-      }
-      
-       .donate-area-wrapper #give-recurring-form h3.give-section-break,
-       .donate-area-wrapper #give-recurring-form h4.give-section-break,
-       .donate-area-wrapper #give-recurring-form legend,
-       .donate-area-wrapper form.give-form h3.give-section-break,
-       .donate-area-wrapper form.give-form h4.give-section-break,
-       .donate-area-wrapper form.give-form legend,
-       .donate-area-wrapper form[id*=give-form] h3.give-section-break,
-       .donate-area-wrapper form[id*=give-form] h4.give-section-break,
-       .donate-area-wrapper form[id*=give-form] legend {
-        font-size: 15px;
-        margin-bottom: 2em;
-      }
-      
-       .donate-area-wrapper #give-recurring-form .form-row label,
-       .donate-area-wrapper form.give-form .form-row label,
-       .donate-area-wrapper form[id*=give-form] .form-row label {
-        font-weight: 600;
-        font-size: 14px;
-      }
-      
-       .donate-area-wrapper .give-input {
-        font-size: 14px !important;
-      }
-      
-       .donate-area-wrapper .give-submit {
-        background: #020202;
-        font-size: 16px;
-        color: white;
-        padding: 15px 25px;
-        border-radius: 5px;
+        line-height: 30px;
       }
 
-      
-       .donate-area-wrapper textarea {
-        height: 150px;
+
+    }
+
+    p {
+      font-family: $base-font;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $text-color;
+      margin-top: 10px;
+
+      @media (max-width:1199px) {
+        font-size: 16px;
+        line-height: 25px;
       }
-      
-       .case-info-area .goal-raised span {
-        display: inline-block;
-        padding-right: 8px;
+    }
+
+    .progress-item {
+      padding: 35px 30px;
+      position: relative;
+      background: #F0F0F0;
+      border-radius: 20px;
+
+      @media (max-width:1399px) {
+        padding: 20px 15px;
       }
-      
-      @media screen and (min-width: 1200px) {
-         .donate-area-wrapper,
-         .big-img {
-          padding-right: 25px;
+
+      .progress {
+        padding: 0;
+        width: 100%;
+        height: 16px;
+        background: $white;
+        border-radius: 30px;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        margin-top: 25px;
+
+        .bar {
+          position: relative;
+          float: left;
+          min-width: 1%;
+          height: 10px;
+          margin-top: 3px;
+          margin-left: 3px;
+          background: $theme-primary-color;
+          z-index: 1;
+          border-radius: 30px;
         }
       }
-    
-      
-       .donate-area-wrapper h3 + p {
-        text-transform: none;
-        font-size: 16px;
-        font-weight: 500;
+
+      .cssProgress-label {
+        position: absolute;
+        top: 35px;
+        right: 45px;
+        background: linear-gradient(180deg, #EBB011 0%, #ED861D 99.48%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0.12em;
+
+        @media (max-width:1399px) {
+          top: 15px;
+        }
       }
+
+
+      .progres-label {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+
+        @media (max-width:399px) {
+          display: block;
+        }
+      }
+
+      .label-on p,
+      .label-two p {
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 28px;
+        color: #525252;
+        margin-top: 0;
+
+        @media (max-width:1199px) {
+          font-size: 13px;
+        }
+
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+
+  .donate-area-wrapper h3 {
+    font-family: $heading-font;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #323232;
+  }
+
+  .donate-area-wrapper h3+p {
+    font-size: 14px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 30px;
+  }
+
+  .donate-area-wrapper h3+p span {
+    background-color: $theme-primary-color;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-size: 0.75rem;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 3px;
+  }
+
+  .donate-area-wrapper form[id*=give-form] .give-donation-amount {
+    margin: 0 0 15px;
+    clear: both;
+  }
+
+  .donate-area-wrapper .give-form-type-multi .give-currency-symbol {
+    background-color: #f2f2f2;
+    height: 50px;
+    border: 1px solid #eee;
+    border-left: none !important;
+    line-height: 50px;
+    color: #242f6c;
+    padding: 0px 18px;
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .donate-area-wrapper #give-recurring-form .give-hidden,
+  .donate-area-wrapper form.give-form .give-hidden,
+  .donate-area-wrapper form[id*=give-form] .give-hidden,
+  .donate-area-wrapper .give-hidden {
+    display: none;
+  }
+
+  .donate-area-wrapper form[id*=give-form] .give-donation-amount #give-amount,
+  .donate-area-wrapper form[id*=give-form] .give-donation-amount #give-amount-text {
+    height: 50px;
+    border: 1px solid #eee;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
+
+  .donate-area-wrapper .give-btn {
+    background: #eeeeee;
+    list-style: none;
+    border: 0;
+    padding: 12px 20px;
+    color: #636363;
+    transition: all .3s ease-in-out;
+  }
+
+  .donate-area-wrapper .give-btn:hover,
+  .donate-area-wrapper .give-btn:focus {
+    background: $theme-primary-color;
+    color: #fff;
+  }
+
+  .donate-area-wrapper #give-recurring-form h3.give-section-break,
+  .donate-area-wrapper #give-recurring-form h4.give-section-break,
+  .donate-area-wrapper #give-recurring-form legend,
+  .donate-area-wrapper form.give-form h3.give-section-break,
+  .donate-area-wrapper form.give-form h4.give-section-break,
+  .donate-area-wrapper form.give-form legend,
+  .donate-area-wrapper form[id*=give-form] h3.give-section-break,
+  .donate-area-wrapper form[id*=give-form] h4.give-section-break,
+  .donate-area-wrapper form[id*=give-form] legend {
+    font-family: $heading-font;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #323232;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $border-color-s2;
+  }
+
+  #give-gateway-radio-list {
+    li {
+      margin-right: 10px;
+      margin-top: 10px;
+      font-size: 20px;
+      color: #323232;
+    }
+  }
+
+  #give_purchase_form_wrap {
+
+    .give-label {
+      display: block;
+
+      .give-input {
+        width: 100%;
+      }
+    }
+  }
+
+  .donate-area-wrapper #give-recurring-form .form-row label,
+  .donate-area-wrapper form.give-form .form-row label,
+  .donate-area-wrapper form[id*=give-form] .form-row label {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .donate-area-wrapper .give-input {
+    font-size: 14px !important;
+    width: 100%;
+    padding-left: 10px;
+    border: 1px solid $border-color-s2;
+    color: #636363;
+
+    &:focus-visible {
+      outline: 0;
+    }
+  }
+
+  .donate-area-wrapper .give-submit {
+    background: #020202;
+    font-size: 16px;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+  }
+
+
+  .donate-area-wrapper textarea {
+    height: 150px;
+  }
+
+  .case-info-area .goal-raised span {
+    display: inline-block;
+    padding-right: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    .donate-area-wrapper,
+    .big-img {
+      padding-right: 25px;
+    }
+  }
+
+
+  .donate-area-wrapper h3+p {
+    text-transform: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
 }

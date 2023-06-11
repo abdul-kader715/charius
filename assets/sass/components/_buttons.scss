@@ -51,10 +51,10 @@
 
 .theme-btn-s2 {
 	background: $white;
-	color: $theme-primary-color-s2;
+	color: $theme-primary-color;
 	display: inline-block;
 	padding: 12px 22px;
-	border: 1px solid $theme-primary-color-s2;
+	border: 1px solid $theme-primary-color;
 	border-radius: 55px;
 	text-transform: capitalize;
 	z-index: 1;
@@ -83,7 +83,7 @@
 	&:hover,
 	&:focus,
 	&:active {
-		background: darken($theme-primary-color-s2, 5%);
+		background: darken($theme-primary-color, 5%);
 		// @include linear-gradient-bg(left, #00ded8, #00a7d5);
 		color: $white;
 	}
@@ -110,7 +110,7 @@
 	font-weight: 600;
 	background: transparent;
 	color: $white;
-	border: 1px solid $theme-primary-color-s2;
+	border: 1px solid $theme-primary-color;
 	transition: all .4s ease-in-out;
 
 	@include media-query(991px) {

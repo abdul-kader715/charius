@@ -90,7 +90,7 @@
             .img-4,
             .img-5 {
                 position: absolute;
-
+                animation: bounce 3s linear infinite;
                 img {
                     @media (max-width:767px) {
                         width: 100px;
@@ -207,12 +207,45 @@
                 }
             }
         }
-        .wpo-about-text{
-           
-        }
+        .wpo-about-text{}
     }
 
 }
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateY(0) translateX(0);
+        transform: translateY(0) translateX(0)
+    }
+
+    50% {
+        -webkit-transform: translateY(15px) translateX(7);
+        transform: translateY(15px) translateX(7)
+    }
+
+    100% {
+        -webkit-transform: translateY(0) translateX(0);
+        transform: translateY(0) translateX(0)
+    }
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(0) translateX(0);
+        transform: translateY(0) translateX(0)
+    }
+
+    50% {
+        -webkit-transform: translateY(15px) translateX(7px);
+        transform: translateY(15px) translateX(7px)
+    }
+
+    100% {
+        -webkit-transform: translateY(0) translateX(0);
+        transform: translateY(0) translateX(0)
+    }
+}
+
+
 
 /* wpo-cta-section-s2 */
 .wpo-cta-section-s2 {

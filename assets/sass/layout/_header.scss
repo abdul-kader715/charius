@@ -274,7 +274,7 @@
 	}
 
 	.wpo-site-header #navbar>ul>li>a.active {
-		color: $theme-primary-color-s2;
+		color: $theme-primary-color;
 	}
 
 	.wpo-site-header #navbar>ul>li>.sub-menu>.menu-item-has-children>a {
@@ -365,7 +365,7 @@
 
 	.wpo-site-header #navbar ul a:hover,
 	.wpo-site-header #navbar ul li.current a {
-		color: $theme-primary-color-s2;
+		color: $theme-primary-color;
 	}
 
 	.wpo-site-header #navbar .close-navbar .ti-close {
@@ -1091,7 +1091,7 @@
 		>ul li a:hover,
 		>ul li a:focus {
 			text-decoration: none;
-			color: $theme-primary-color-s2;
+			color: $theme-primary-color;
 		}
 
 		// style for widther screen
@@ -1663,7 +1663,7 @@
 
 		&:hover,
 		&.active {
-			color: $theme-primary-color-s2;
+			color: $theme-primary-color;
 		}
 	}
 
