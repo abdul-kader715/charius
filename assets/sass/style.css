@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*------------------------------------------------------------------
 [Master Stylesheet]
-Theme Name:     Politian - Political Campaign HTML5 Template
+Theme Name:     Charius - Charity Nonprofit HTML5 Template
 Version:        1.0.0
 -------------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -17,68 +17,66 @@ Version:        1.0.0
 	2.2 navigation
 
 3. content
-	3.1 wpo-features-area
-	3.2 wpo-about-section
-	3.3 wpo-service-section
-	3.4 wpo-campaign-area
-	3.5 wpo-testimonial-section
-	3.6 wpo-fun-fact-section
-	3.7 wpo-team-section
-	3.8 wpo-donors-section
-	3.9 wpo-blog-section
+	3.1 wpo-hero-slider
+	3.2 wpo-features-area
+	3.3 wpo-about-section
+	3.4 wpo-causes-section
+	3.5 wpo-service-section
+	3.6 wpo-cta-section
+	3.7 wpo-event-section
+	3.8 wpo-fun-fact-section
+	3.9 wpo-testimonial-section
 	3.10 wpo-instagram-section
-	3.11 partners-section
+	3.11 wpo-blog-section 
+	3.12 wpo-partners-section 
 
 4. wpo-footer
 
 5. Home-style-2
    5.1 wpo-service-section-s2
-   5.2 wpo-about-section-s2
-   5.3 wpo-campaign-area-s2
-   5.4 wpo-fun-fact-section-s2
+   5.2 wpo-about-section-s2 
+   5.3 wpo-cta-section-s2
+   5.4 wpo-causes-section-s2
+   5.5 wpo-fun-fact-section-s2
+   5.6 wpo-blog-section-s2 
 
 6. Home-style-3
-   6.1 wpo-features-s2
-   6.2 wpo-about-section-s3
-   6.3 wpo-fun-fact-section-s3
-   6.4 wpo-campaign-area-s3 
+   6.1 wpo-about-section-s3
+   6.2 wpo-fun-fact-section-s3
+   6.3 wpo-causes-section-s3
+   6.4 wpo-instagram-section-s2 
+   6.5 wpo-testimonial-section-s2
+   6.6 wpo-volunteer-section
 
 7. Home-style-4
    7.1 wpo-about-section-s4
-   7.2 wpo-campaign-area-s4
+   7.2 wpo-cta-section-s3 
    7.3 wpo-fun-fact-section-s4
 
-8. campaign-details-page
+8. event-details-page
 
-9. wpo-service-single
+9. wpo-case-details-area
 
-10. wpo-shop-page
+10. wpo-donation-page-area
 
-11. wpo-shop-single-page
+11. volunteer page
 
 12. wpo-team-single
 
-13. wpo-gallery-page
+13. wpo-service-single-section
 
-14. wpo-blog-pg-section
+14. wpo-faq-page
 
-15. wpo-blog-single-section
+15. wpo-blog-pg-section
 
-16. wpo-donation-page-area
+16. wpo-blog-single-section
 
-17. wpo-cart-page
+17. wpo-contact-pg-section
 
-18. wpo-checkout-page-style
+18. login-design
 
-19. wpo-contact-pg-section
+19. error-404-section
 
-20. wpo-faq-page
-
-21. error-404-section
-
-22. wpo-terms-section
-
-23. volunteer page
 
 ----------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -4329,7 +4327,6 @@ img {
   width: 175px;
   border-radius: 100px;
   border: 1px solid #00AF90;
-  background: #E6F5F3;
   z-index: -1;
 }
 @media (max-width: 1199px) {
@@ -4360,8 +4357,8 @@ img {
   left: -35px;
   z-index: 3;
   border-radius: 0;
-  border: 1px solid transparent;
-  background: transparent;
+  border: none;
+  background: none;
 }
 @media (max-width: 1599px) {
   .static-hero-s4 .manroted [class*=box]:last-child {
@@ -4381,88 +4378,6 @@ img {
 }
 .static-hero-s4 .manroted .firstSlide {
   animation: firstChild 1s;
-}
-
-.static-hero-s4 .wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  max-height: 500px;
-  margin: 0 auto;
-  padding: 0;
-}
-.static-hero-s4 #path-svg {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-.static-hero-s4 .content {
-  position: relative;
-  top: 0;
-  left: 0;
-  /*width: 100%;*/
-  /*height: 0;*/
-  overflow: visible;
-  /*padding-bottom: 84%;*/
-  z-index: 2;
-}
-.static-hero-s4 .content::before {
-  float: left;
-  content: "";
-  height: 500px;
-}
-.static-hero-s4 .content::after {
-  display: block;
-  content: "";
-  clear: both;
-}
-.static-hero-s4 .track {
-  border: 1px solid #708a91;
-  border-radius: 50%;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.static-hero-s4 .item {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #708a91;
-  border-radius: 50%;
-}
-.static-hero-s4 .item .child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #fee3c9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.static-hero-s4 .descriptions {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  pointer-events: none;
-}
-.static-hero-s4 .item.active {
-  background-color: red;
-  width: 100px;
-  height: 100px;
-}
-@media (max-width: 799px) {
-  .static-hero-s4 .wrapper {
-    max-width: 360px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -4725,7 +4640,7 @@ img {
   top: 0;
 }
 
-/* 3.1 wpo-features-area */
+/* 3.2 wpo-features-area */
 .wpo-features-area {
   padding-top: 60px;
 }
@@ -4846,7 +4761,7 @@ img {
   background: linear-gradient(180deg, #00AF90 0%, #00715D 97.92%);
 }
 
-/* 3.2 wpo-about-section */
+/* 3.3 wpo-about-section */
 @media (max-width: 991px) {
   .wpo-about-section,
   .wpo-about-section-s2,
@@ -5244,7 +5159,7 @@ img {
   text-fill-color: transparent;
 }
 
-/* wpo-causes-section */
+/*3.4 wpo-causes-section */
 .wpo-causes-section .container-fluid,
 .wpo-causes-section-s2 .container-fluid {
   padding: 0;
@@ -5624,7 +5539,7 @@ img {
   text-fill-color: transparent;
 }
 
-/* 3.3 wpo-service-section*/
+/*3.5 wpo-service-section*/
 .wpo-service-section {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -5735,7 +5650,7 @@ img {
   color: #FF7888;
 }
 
-/* wpo-cta-section */
+/*3.6 wpo-cta-section */
 .wpo-cta-section {
   background: url(../images/cta/bg.jpg);
   background-repeat: no-repeat;
@@ -5860,7 +5775,7 @@ img {
   }
 }
 
-/* wpo-event-section */
+/*3.7 wpo-event-section */
 .wpo-event-section {
   padding-bottom: 90px;
 }
@@ -6007,7 +5922,7 @@ img {
   fill: #6A0000;
 }
 
-/* wpo-fun-fact-section */
+/*3.8 wpo-fun-fact-section */
 .wpo-fun-fact-section,
 .wpo-fun-fact-section-s4 {
   background: url(../images/funfact.jpg);
@@ -6122,7 +6037,7 @@ img {
   }
 }
 
-/* wpo-testimonial-section */
+/*3.9 wpo-testimonial-section */
 .wpo-testimonial-section {
   position: relative;
   margin-top: -185px;
@@ -6344,7 +6259,7 @@ img {
   }
 }
 
-/* wpo-instagram-section */
+/*3.10 wpo-instagram-section */
 .wpo-instagram-section.s2 {
   padding-bottom: 90px;
 }
@@ -6506,7 +6421,7 @@ img {
   overflow: unset;
 }
 
-/* wpo-blog-section */
+/*3.11 wpo-blog-section */
 @media (max-width: 991px) {
   .wpo-blog-section .wpo-section-title h2 {
     font-size: 35px;
@@ -6699,7 +6614,7 @@ img {
   text-fill-color: transparent;
 }
 
-/* 3.2 wpo-partners-section */
+/* 3.12 wpo-partners-section */
 .wpo-partners-section {
   position: relative;
   padding: 60px 0 90px;
@@ -6739,7 +6654,10 @@ img {
   opacity: 0.8;
 }
 
-/* wpo-service-section-s2 */
+/*======================================
+5. Home-style-2
+ =======================================*/
+/*5.1 wpo-service-section-s2 */
 .wpo-service-section-s2 {
   padding-top: 0;
 }
@@ -6754,7 +6672,7 @@ img {
   }
 }
 
-/* wpo-about-section-s2 */
+/*5.2 wpo-about-section-s2 */
 @media (max-width: 1399px) {
   .wpo-about-section-s2 .wpo-about-wrap .wpo-about-text h2 {
     font-size: 50px;
@@ -6994,7 +6912,7 @@ img {
     transform: translateY(0) translateX(0);
   }
 }
-/* wpo-cta-section-s2 */
+/*5.3 wpo-cta-section-s2 */
 .wpo-cta-section-s2 {
   position: relative;
   background: #A2BCB7;
@@ -7113,7 +7031,7 @@ img {
   }
 }
 
-/* wpo-causes-section-s2 */
+/*5.4 wpo-causes-section-s2 */
 .wpo-causes-section-s2 .causes-wrap {
   margin: 0;
 }
@@ -7316,7 +7234,7 @@ img {
   margin-left: 10px;
 }
 
-/* wpo-fun-fact-section-s2 */
+/*5.5 wpo-fun-fact-section-s2 */
 .wpo-fun-fact-section-s2 {
   background: linear-gradient(180deg, #EBB011 0%, #ED861D 99.48%);
   padding: 100px 0;
@@ -7345,12 +7263,15 @@ img {
   }
 }
 
-/* wpo-blog-section-s2 */
+/*5.6 wpo-blog-section-s2 */
 .wpo-blog-section-s2 {
   padding-bottom: 0;
 }
 
-/* wpo-about-section-s3 */
+/*======================================
+6. Home-style-3
+ =======================================*/
+/*6.1 wpo-about-section-s3 */
 @media (max-width: 991px) {
   .wpo-about-section-s3 {
     padding-top: 90px;
@@ -7430,7 +7351,7 @@ img {
   }
 }
 
-/* wpo-fun-fact-section-s3 */
+/*6.2 wpo-fun-fact-section-s3 */
 .wpo-fun-fact-section-s3 {
   padding-top: 0;
 }
@@ -7451,7 +7372,7 @@ img {
   color: #848484;
 }
 
-/* wpo-causes-section-s3 */
+/*6.3 wpo-causes-section-s3 */
 .wpo-causes-section-s3 .causes-wrap {
   margin: 0 100px;
   margin-top: 0;
@@ -7486,7 +7407,7 @@ img {
   }
 }
 
-/* wpo-instagram-section-s2 */
+/*6.4 wpo-instagram-section-s2 */
 .wpo-instagram-section-s2 {
   padding-bottom: 0;
   padding-top: 90px;
@@ -7502,7 +7423,7 @@ img {
   }
 }
 
-/* wpo-testimonial-section-s2 */
+/*6.5 wpo-testimonial-section-s2 */
 .wpo-testimonial-section-s2 {
   background: #F7F3EB;
   padding-bottom: 90px;
@@ -7520,7 +7441,7 @@ img {
   }
 }
 
-/* wpo-volunteer-section */
+/*6.6 wpo-volunteer-section */
 .wpo-volunteer-section.s2 {
   padding-bottom: 40px;
 }
@@ -7654,7 +7575,7 @@ img {
 }
 
 /*======================================
-6. Home-style-4
+7. Home-style-4
  =======================================*/
 /* 7.1 wpo-about-section-s4 */
 .wpo-about-section-s4 .wpo-about-img-s5 {
@@ -7843,6 +7764,7 @@ img {
   }
 }
 
+/* 7.2 wpo-cta-section-s3  */
 .wpo-cta-section-s3 .bg-color {
   background: url(../images/cta/bg-2.jpg);
   overflow: hidden;
@@ -7877,7 +7799,7 @@ img {
 }
 
 /*----------------------------------------------
-10. event-details-page
+8. event-details-page
 ----------------------------------------------*/
 .wpo-event-details-text {
   margin-top: 50px;
@@ -8005,7 +7927,7 @@ img {
   width: 100%;
 }
 
-/* wpo-case-details-area */
+/*9. wpo-case-details-area */
 .wpo-case-details-area .donate-area-top {
   margin: 50px 0;
 }
@@ -8288,7 +8210,7 @@ img {
 }
 
 /*======================================
-16. wpo-donation-page-area
+10. wpo-donation-page-area
  =======================================*/
 .wpo-donate-header {
   text-align: center;
@@ -8500,6 +8422,144 @@ img {
 }
 
 #Donations .submit-area {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+11. volunteer page
+--------------------------------------------------------------*/
+.volunteer-area {
+  padding: 120px 0 45px;
+}
+
+.volunteer-wrap {
+  padding-bottom: 120px;
+}
+
+.volunter-img {
+  padding: 30px;
+}
+.volunter-img img {
+  width: 100%;
+}
+
+.volunteer-img-wrap {
+  box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.15);
+}
+
+.volunteer-contact-form form input,
+.volunteer-contact-form form select,
+.volunteer-contact-form form label,
+.volunteer-contact-form form textarea {
+  border: 1px solid #d0d4df;
+  padding-left: 15px;
+  height: 50px;
+  width: 100%;
+}
+
+.volunteer-contact-form form label {
+  line-height: 50px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.volunteer-contact-form form label.error {
+  height: 15px;
+  border: 0;
+  line-height: 10px;
+  padding-left: 0;
+}
+
+.volunteer-contact-form .form-group-in input {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.volunteer-contact-form form textarea {
+  height: 100px;
+}
+
+.volunteer-contact-form .form-group-in {
+  position: relative;
+}
+
+.volunteer-contact-form .form-group-in i {
+  position: absolute;
+  right: 30px;
+  top: 17px;
+  font-size: 20px;
+}
+
+.volunteer-contact-form .form-group {
+  margin-bottom: 30px;
+}
+
+.volunteer-contact-form {
+  max-width: 760px;
+  margin: auto;
+  padding: 50px 40px;
+  background: #fff;
+  margin-top: -295px;
+  position: relative;
+  z-index: 1;
+}
+
+.volunteer-contact-form:after {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #fff;
+  z-index: -1;
+}
+
+.volunteer-contact-form:before {
+  position: absolute;
+  left: -7px;
+  bottom: -8px;
+  width: 102%;
+  height: 47%;
+  content: "";
+  background: #ffc4ad;
+  z-index: -1;
+}
+
+.volunteer-contact-form h2 {
+  margin-top: 0;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .volunteer-contact-form {
+    max-width: 635px;
+    margin-top: -210px;
+  }
+  .volunteer-contact-form:before {
+    height: 62%;
+    width: 103%;
+  }
+}
+@media (max-width: 767px) {
+  .volunteer-contact-form {
+    margin-top: 0px;
+    padding: 14px 16px;
+    box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 50px;
+    padding-top: 30px;
+  }
+  .volunteer-contact-form h2 {
+    font-size: 23px;
+  }
+  .volunteer-area {
+    padding: 70px 0 0;
+  }
+}
+.volunteer-contact-form .submit-area {
   text-align: center;
 }
 
@@ -8834,7 +8894,7 @@ img {
 }
 
 /*--------------------------------------------------------------
-8. wpo-service-single-section
+13. wpo-service-single-section
 --------------------------------------------------------------*/
 @media (max-width: 991px) {
   .wpo-service-single-section {
@@ -9121,7 +9181,7 @@ img {
 }
 
 /*--------------------------------------------------------------
-20. wpo-faq-page
+14. wpo-faq-page
 --------------------------------------------------------------*/
 .wpo-faq-section .wpo-section-title {
   text-align: center;
@@ -9286,7 +9346,7 @@ img {
 }
 
 /*--------------------------------------------------------------
-14. wpo-blog-pg-section
+15. wpo-blog-pg-section
 --------------------------------------------------------------*/
 .wpo-blog-pg-section {
   /*** format-standard ***/
@@ -9605,7 +9665,7 @@ img {
   }
 }
 /*--------------------------------------------------------------
-15. wpo-blog-single-section
+16. wpo-blog-single-section
 --------------------------------------------------------------*/
 .wpo-blog-single-section {
   /*** tag-share ***/
@@ -10248,145 +10308,7 @@ img {
 }
 
 /*--------------------------------------------------------------
-23. volunteer page
---------------------------------------------------------------*/
-.volunteer-area {
-  padding: 120px 0 45px;
-}
-
-.volunteer-wrap {
-  padding-bottom: 120px;
-}
-
-.volunter-img {
-  padding: 30px;
-}
-.volunter-img img {
-  width: 100%;
-}
-
-.volunteer-img-wrap {
-  box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.15);
-}
-
-.volunteer-contact-form form input,
-.volunteer-contact-form form select,
-.volunteer-contact-form form label,
-.volunteer-contact-form form textarea {
-  border: 1px solid #d0d4df;
-  padding-left: 15px;
-  height: 50px;
-  width: 100%;
-}
-
-.volunteer-contact-form form label {
-  line-height: 50px;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.volunteer-contact-form form label.error {
-  height: 15px;
-  border: 0;
-  line-height: 10px;
-  padding-left: 0;
-}
-
-.volunteer-contact-form .form-group-in input {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-}
-
-.volunteer-contact-form form textarea {
-  height: 100px;
-}
-
-.volunteer-contact-form .form-group-in {
-  position: relative;
-}
-
-.volunteer-contact-form .form-group-in i {
-  position: absolute;
-  right: 30px;
-  top: 17px;
-  font-size: 20px;
-}
-
-.volunteer-contact-form .form-group {
-  margin-bottom: 30px;
-}
-
-.volunteer-contact-form {
-  max-width: 760px;
-  margin: auto;
-  padding: 50px 40px;
-  background: #fff;
-  margin-top: -295px;
-  position: relative;
-  z-index: 1;
-}
-
-.volunteer-contact-form:after {
-  position: absolute;
-  left: 0px;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background: #fff;
-  z-index: -1;
-}
-
-.volunteer-contact-form:before {
-  position: absolute;
-  left: -7px;
-  bottom: -8px;
-  width: 102%;
-  height: 47%;
-  content: "";
-  background: #ffc4ad;
-  z-index: -1;
-}
-
-.volunteer-contact-form h2 {
-  margin-top: 0;
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 1200px) {
-  .volunteer-contact-form {
-    max-width: 635px;
-    margin-top: -210px;
-  }
-  .volunteer-contact-form:before {
-    height: 62%;
-    width: 103%;
-  }
-}
-@media (max-width: 767px) {
-  .volunteer-contact-form {
-    margin-top: 0px;
-    padding: 14px 16px;
-    box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.15);
-    margin-top: 50px;
-    padding-top: 30px;
-  }
-  .volunteer-contact-form h2 {
-    font-size: 23px;
-  }
-  .volunteer-area {
-    padding: 70px 0 0;
-  }
-}
-.volunteer-contact-form .submit-area {
-  text-align: center;
-}
-
-/*--------------------------------------------------------------
-19. wpo-contact-pg-section
+17. wpo-contact-pg-section
 --------------------------------------------------------------*/
 .wpo-contact-pg-section {
   padding-bottom: 0px;
@@ -10593,7 +10515,7 @@ img {
 }
 
 /*---------------------------------------------------------
-19. login-design
+18. login-design
 -----------------------------------------------------------*/
 .wpo-login-area {
   width: 100%;
@@ -10937,7 +10859,7 @@ input[type=checkbox]:checked:disabled + label:before {
 }
 
 /*--------------------------------------------------------------
-21. error-404-section
+19. error-404-section
 --------------------------------------------------------------*/
 .error-404-section {
   text-align: center;

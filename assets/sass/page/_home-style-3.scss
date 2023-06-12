@@ -1,4 +1,8 @@
-/* wpo-about-section-s3 */
+/*======================================
+6. Home-style-3
+ =======================================*/
+
+/*6.1 wpo-about-section-s3 */
 .wpo-about-section-s3 {
     @media (max-width:991px) {
         padding-top: 90px;
@@ -89,7 +93,7 @@
     }
 }
 
-/* wpo-fun-fact-section-s3 */
+/*6.2 wpo-fun-fact-section-s3 */
 .wpo-fun-fact-section-s3 {
     padding-top: 0;
 
@@ -116,7 +120,7 @@
     }
 }
 
-/* wpo-causes-section-s3 */
+/*6.3 wpo-causes-section-s3 */
 .wpo-causes-section-s3 {
 
     .causes-wrap {
@@ -150,7 +154,7 @@
     }
 }
 
-/* wpo-instagram-section-s2 */
+/*6.4 wpo-instagram-section-s2 */
 .wpo-instagram-section-s2 {
     padding-bottom: 0;
     padding-top: 90px;
@@ -164,7 +168,7 @@
     }
 }
 
-/* wpo-testimonial-section-s2 */
+/*6.5 wpo-testimonial-section-s2 */
 .wpo-testimonial-section-s2 {
     background: #F7F3EB;
     padding-bottom: 90px;
@@ -180,7 +184,7 @@
     }
 }
 
-/* wpo-volunteer-section */
+/*6.6 wpo-volunteer-section */
 .wpo-volunteer-section {
     &.s2{
         padding-bottom: 40px;
@@ -216,7 +220,6 @@
         }
     }
 }
-
 
 .volunteer-single {
     text-align: center;
