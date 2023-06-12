@@ -1089,3 +1089,6 @@ function rotate() {
   window.setInterval(function(){
     rotate()
   }, 4000);
+
+
+  
