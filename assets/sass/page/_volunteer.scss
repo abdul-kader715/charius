@@ -3,11 +3,14 @@
 --------------------------------------------------------------*/
 
 .volunteer-area {
-    padding: 120px 0 45px;
+    padding: 120px 0 0;
 }
 
 .volunteer-wrap{
     padding-bottom: 120px;
+    @media(max-width: 767px) {
+        padding-bottom: 70px;
+    }
 }
 
 .volunter-img {

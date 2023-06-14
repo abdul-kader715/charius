@@ -5472,6 +5472,7 @@ img {
   display: flex;
   align-content: center;
   justify-content: space-between;
+  margin-top: 4px;
 }
 @media (max-width: 399px) {
   .causes-item .content .progress-item .progres-label {
@@ -6540,6 +6541,7 @@ img {
   font-size: 18px;
   line-height: 30px;
   color: #525252;
+  padding-bottom: 10px;
 }
 @media (max-width: 991px) {
   .blog-single-card .content p {
@@ -6637,6 +6639,11 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
+}
+.wpo-partners-section .grid {
+  height: 150px;
+  display: flex;
+  align-items: center;
 }
 .wpo-partners-section .grid:hover img {
   filter: grayscale(100%);
@@ -7452,6 +7459,14 @@ img {
 }
 @media (max-width: 767px) {
   .wpo-volunteer-section.s2 {
+    padding-bottom: 0;
+  }
+}
+.wpo-volunteer-section.s3 {
+  padding-bottom: 35px;
+}
+@media (max-width: 767px) {
+  .wpo-volunteer-section.s3 {
     padding-bottom: 0;
   }
 }
@@ -8429,11 +8444,16 @@ img {
 11. volunteer page
 --------------------------------------------------------------*/
 .volunteer-area {
-  padding: 120px 0 45px;
+  padding: 120px 0 0;
 }
 
 .volunteer-wrap {
   padding-bottom: 120px;
+}
+@media (max-width: 767px) {
+  .volunteer-wrap {
+    padding-bottom: 70px;
+  }
 }
 
 .volunter-img {
@@ -9070,27 +9090,30 @@ img {
 .wpo-single-sidebar .wpo-service-widget ul li a {
   display: block;
   font-size: 16px;
-  color: #010038;
+  color: #fff;
   font-weight: 500;
   padding-left: 30px;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  background: #F99126;
+  padding: 8px 0;
+  padding-left: 40px;
 }
 .wpo-single-sidebar .wpo-service-widget ul li a:before {
   position: absolute;
-  left: 0;
+  left: 20px;
   top: 50%;
   content: "";
-  background: #F99126;
+  background: #fff;
   width: 10px;
   height: 3px;
   transform: translateY(-50%);
 }
 .wpo-single-sidebar .wpo-service-widget ul li a:hover {
-  color: #F99126;
+  background: #0C5447;
 }
 .wpo-single-sidebar .wpo-service-widget ul li:last-child a {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .wpo-single-sidebar .wpo-newsletter-widget p {
   font-size: 20px;
@@ -9662,6 +9685,14 @@ img {
   }
   to {
     transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes spineer {
+  from {
+    box-shadow: 0 0 0 0 rgba(59, 81, 125, 0.99);
+  }
+  to {
+    box-shadow: 0 0 0 45px rgba(59, 81, 125, 0.01);
   }
 }
 /*--------------------------------------------------------------

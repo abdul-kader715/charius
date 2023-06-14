@@ -1,4 +1,3 @@
-
 /* 3.2 wpo-features-area */
 .wpo-features-area {
     padding-top: 60px;
@@ -418,15 +417,17 @@
     .container-fluid {
         padding: 0;
     }
-    &.s2{
+
+    &.s2 {
         padding-bottom: 90px;
+
         @media (max-width:991px) {
             padding-bottom: 60px;
         }
-    
+
         @media (max-width:767px) {
             padding-bottom: 50px;
-        } 
+        }
     }
 }
 
@@ -470,17 +471,19 @@
 
             h2 {
                 margin-bottom: 15px;
-                a{
+
+                a {
                     font-family: $heading-font;
                     font-weight: 700;
                     font-size: 40px;
                     line-height: 55px;
                     color: $white;
+
                     @media (max-width:1199px) {
                         font-size: 34px;
                         line-height: 50px;
                     }
-    
+
                     @media (max-width:575px) {
                         font-size: 25px;
                         line-height: 35px;
@@ -616,7 +619,8 @@
 
         h2 {
             margin-top: -10px;
-            a{
+
+            a {
                 font-family: $heading-font;
                 font-weight: 700;
                 font-size: 35px;
@@ -626,22 +630,22 @@
                 @media (max-width:1550px) {
                     font-size: 30px;
                 }
-    
+
                 @media (max-width:1399px) {
                     font-size: 30px;
                     line-height: 40px;
                 }
-    
+
                 @media (max-width:1199px) {
                     font-size: 24px;
                     line-height: 35px;
                 }
-    
+
                 @media (max-width:991px) {
                     font-size: 28px;
                     line-height: 35px;
                 }
-    
+
                 @media (max-width:399px) {
                     font-size: 20px;
                     line-height: 30px;
@@ -722,6 +726,7 @@
                 display: flex;
                 align-content: center;
                 justify-content: space-between;
+                margin-top: 4px;
 
                 @media (max-width:399px) {
                     display: block;
@@ -1301,7 +1306,6 @@
         }
     }
 }
-
 
 /*3.8 wpo-fun-fact-section */
 .wpo-fun-fact-section,
@@ -1984,6 +1988,7 @@
             font-size: 18px;
             line-height: 30px;
             color: #525252;
+            padding-bottom: 10px;
 
             @media (max-width:991px) {
                 font-size: 16px;
@@ -2147,6 +2152,9 @@
     }
 
     .grid {
+        height: 150px;
+        display: flex;
+        align-items: center;
 
         &:hover {
 

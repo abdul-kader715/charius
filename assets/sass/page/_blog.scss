@@ -384,3 +384,39 @@
 	  transform: scale3d(1, 1, 1);
 	}
   }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+@-webkit-keyframes spineer {
+	from {
+		-webkit-box-shadow: 0 0 0 0 rgba(59, 81, 125, 0.99);
+		box-shadow: 0 0 0 0 rgba(59, 81, 125, 0.99);
+	}
+
+	to {
+		-webkit-box-shadow: 0 0 0 45px rgba(59, 81, 125, 0.01);
+		box-shadow: 0 0 0 45px rgba(59, 81, 125, 0.01);
+	}
+}
+
+@keyframes spineer {
+	from {
+		-webkit-box-shadow: 0 0 0 0 rgba(59, 81, 125, 0.99);
+		box-shadow: 0 0 0 0 rgba(59, 81, 125, 0.99);
+	}
+
+	to {
+		-webkit-box-shadow: 0 0 0 45px rgba(59, 81, 125, 0.01);
+		box-shadow: 0 0 0 45px rgba(59, 81, 125, 0.01);
+	}
+}
