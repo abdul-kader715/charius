@@ -588,7 +588,7 @@
             smartSpeed: 300,
             margin: 20,
             loop: true,
-            autoplayHoverPause: true,
+            // autoplayHoverPause: true,
             dots: false,
             nav: false,
             navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow-1"></i>'],
@@ -605,6 +605,8 @@
 
                 768: {
                     items: 2,
+                    dots: true,
+                    nav: false,
                 },
 
                 1200: {

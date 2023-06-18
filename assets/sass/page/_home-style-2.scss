@@ -5,6 +5,7 @@
 /*5.1 wpo-service-section-s2 */
 .wpo-service-section-s2 {
     padding-top: 0;
+
     @media (max-width:991px) {
         padding-bottom: 60px;
     }
@@ -16,12 +17,31 @@
 
 /*5.2 wpo-about-section-s2 */
 .wpo-about-section-s2 {
+    padding: 200px 0;
+
+    @media (max-width:1399px) {
+        padding: 150px 0;
+    }
+
+    @media (max-width:1199px) {
+        padding: 120px 0;
+    }
+
+    @media (max-width:991px) {
+        padding: 60px 0 90px;
+    }
+
+    @media (max-width:991px) {
+        padding: 50px 0 80px;
+    }
+
     .wpo-about-wrap {
         .wpo-about-text h2 {
             @media (max-width:1399px) {
                 font-size: 50px;
                 line-height: 64px;
             }
+
             @media(max-width:1199px) {
                 font-size: 35px;
                 line-height: 45px;
@@ -33,7 +53,7 @@
         }
 
         .wpo-about-img {
-            margin-left: -200px;
+            margin-left: -300px;
             position: relative;
             z-index: -1;
 
@@ -56,6 +76,7 @@
                 margin-left: 0;
                 margin-top: 50px;
             }
+
             @media (max-width:575px) {
                 margin-top: 0px;
             }
@@ -82,6 +103,7 @@
                     height: 400px;
                     width: 400px;
                 }
+
                 @media (max-width:575px) {
                     height: 100%;
                     width: 100%;
@@ -95,6 +117,7 @@
             .img-5 {
                 position: absolute;
                 animation: bounce 3s linear infinite;
+
                 img {
                     @media (max-width:767px) {
                         width: 100px;
@@ -115,8 +138,9 @@
                 @media (max-width:991px) {
                     right: 210px;
                 }
+
                 @media (max-width:575px) {
-                    right:  15%;
+                    right: 15%;
                     bottom: 0px;
                 }
             }
@@ -164,11 +188,12 @@
                     top: -20px;
                     left: 190px;
                 }
+
                 @media (max-width:575px) {
                     top: 0px;
                     left: 30%;
                 }
-                
+
                 img {
                     @media (max-width:767px) {
                         width: 150px;
@@ -178,8 +203,8 @@
             }
 
             .img-5 {
-                right: 0;
-                top: 0px;
+                right: 95px;
+                top: 29px;
 
                 @media (max-width:1599px) {
                     right: -20px;
@@ -189,20 +214,25 @@
                 @media (max-width:991px) {
                     right: 20px;
                 }
+
                 @media (max-width:767px) {
                     top: 85px;
                     right: 70px;
                 }
+
                 @media (max-width:575px) {
                     top: 85px;
                     right: 0px;
                 }
+
                 @media (max-width:575px) {
                     right: 8%
                 }
+
                 @media (max-width:399px) {
                     display: none;
                 }
+
                 img {
                     @media (max-width:767px) {
                         width: 70px;
@@ -211,10 +241,12 @@
                 }
             }
         }
-        .wpo-about-text{}
+
+        .wpo-about-text {}
     }
 
 }
+
 @-webkit-keyframes bounce {
     0% {
         -webkit-transform: translateY(0) translateX(0);
@@ -372,9 +404,11 @@
         padding: 30px;
         border-radius: 12px;
         box-shadow: 0px 2px 8px 0px #00023526;
+        margin-right: 15px;
 
         @media (max-width:991px) {
             padding: 40px 40px;
+            margin-right: 0px;
         }
 
         @media (max-width:767px) {
@@ -391,17 +425,17 @@
             padding-top: 30px;
 
             h2 {
-                a{
+                a {
 
                     @media (max-width:1550px) {
                         font-size: 35px;
                     }
-    
+
                     @media (max-width:991px) {
                         font-size: 28px;
                         line-height: 35px;
                     }
-    
+
                     @media (max-width:399px) {
                         font-size: 20px;
                         line-height: 30px;
@@ -415,7 +449,7 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 30px;
-
+            margin-right: 0px;
             @media (max-width:991px) {
                 display: block;
                 margin-top: 30px;
@@ -468,17 +502,21 @@
                 }
 
                 h2 {
-                    a{
+                    a {
 
                         font-weight: 700;
                         font-size: 26px;
-                        line-height: 35px;
-    
+                        line-height: 40px;
+
+                        @media (max-width:1399px) {
+                            font-size: 24px;
+                            line-height: 35px;
+                        }
                         @media (max-width:991px) {
                             font-size: 28px;
                             line-height: 35px;
                         }
-    
+
                         @media (max-width:399px) {
                             font-size: 20px;
                             line-height: 30px;
@@ -488,9 +526,12 @@
 
                 p {
                     font-size: 17px;
-                    line-height: 25px;
+                    line-height: 28px;
                     margin: 0;
                     margin-bottom: 15px;
+                    @media (max-width:1399px) {
+                        line-height: 22px;
+                    }
                 }
 
                 .progress-item {
@@ -578,12 +619,17 @@
 
         }
     }
+    @media (max-width: 575px){
+        .causes-item .content .progress-item .cssProgress-label {
+            right: 37px;
+        }
+    }
 }
 
 /*5.5 wpo-fun-fact-section-s2 */
 .wpo-fun-fact-section-s2 {
     background: linear-gradient(180deg, #EBB011 0%, #ED861D 99.48%);
-    padding: 100px 0;
+    padding: 90px 0;
     margin: 0 195px;
     border-radius: 12px;
 

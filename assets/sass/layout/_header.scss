@@ -251,27 +251,8 @@
 		position: relative;
 	}
 
-	.wpo-site-header #navbar>ul>li>a:before {
-		position: absolute;
-		left: 50%;
-		top: 0;
-		width: 0;
-		height: 4px;
-		transform: translateX(-50%);
-		background: $theme-primary-color-gradient;
-		content: "";
-		opacity: 0;
-		visibility: hidden;
-		transition: all .3s;
-		border-radius: 3px;
-	}
+	
 
-	.wpo-site-header #navbar>ul>li>a:hover:before,
-	.wpo-site-header #navbar>ul>li>a.active:before {
-		opacity: 1;
-		visibility: visible;
-		width: 100%;
-	}
 
 	.wpo-site-header #navbar>ul>li>a.active {
 		color: $theme-primary-color;
@@ -509,25 +490,25 @@
 				padding: 5px 10px;
 			}
 
-			@media(max-width:991px) {
+			@media(max-width:1399px) {
 				padding: 0;
 				width: 40px;
 				height: 40px;
 				background: none;
 			}
 
-			@media (max-width:420px) {
+			@media (max-width:575px) {
 				display: none;
 			}
 
 			.text {
-				@media (max-width:991px) {
+				@media (max-width:1399px) {
 					display: none;
 				}
 			}
 
 			.mobile {
-				@media (max-width:991px) {
+				@media (max-width:1399px) {
 					margin-top: 5px;
 				}
 
@@ -541,8 +522,6 @@
 	.header-profile-form-wrapper {
 		.profile-toggle-btn {
 			background: none;
-			margin-right: 10px;
-			margin-top: 4px;
 
 			.fi {
 				@media(max-width:767px) {
@@ -616,12 +595,13 @@
 }
 
 .wpo-site-header .header-right>div:last-child {
-	margin: 0 0 0 10px;
+	margin: 0 0 0 30px;
 	position: relative;
 
-	@media (max-width:1199px) {
-		margin: 0;
+	@media (max-width:1499px) {
+		margin: 0 0 0 16px;
 	}
+	
 
 
 	@media (max-width: 767px) {}
@@ -635,7 +615,18 @@
 
 
 .wpo-site-header .header-right .header-search-form-wrapper .fi:before {
-	font-size: 18px;
+	font-size: 26px;
+	line-height: 30px;
+	@media(max-width:450px) {
+		font-size: 21px;
+	}
+}
+.wpo-site-header .header-right .header-profile-form-wrapper .profile-toggle-btn .fi:before {
+	font-size: 30px;
+	color: #000;
+	@media(max-width:450px) {
+		font-size: 24px;
+	}
 }
 
 .wpo-site-header .header-right .cart-toggle-btn {
@@ -650,21 +641,22 @@
 		width: 18px;
 		height: 30px;
 		text-align: center;
-		margin-top: -10px;
+		margin-top: 0px;
 	}
 
 	.fi {
 		color: $white;
-		margin-right: 20px;
+		margin-right: 29px;
 
 		@media(max-width:450px) {
-			margin-right: 0;
+			margin-right: 20px;
 			text-align: center;
 		}
 
 		&:before {
+			
 			@media(max-width:991px) {
-				font-size: 16px;
+				
 			}
 		}
 	}
@@ -690,8 +682,8 @@
 
 	.fi {
 		font-size: 30px;
-		font-size: calc-rem-value(30);
 		color: $dark-gray;
+		line-height: 37px;
 	}
 
 	>div {
@@ -1311,7 +1303,7 @@
 		}
 
 		#navbar {
-			background: linear-gradient(286.02deg, #080A14 38.02%, #10121E 61.92%, #282A34 74.32%, #404354 90.71%, #343643 99.65%);
+			background: $theme-primary-color-gradient-2;
 			display: block !important;
 			width: 300px;
 			height: 100%;
@@ -1431,7 +1423,10 @@
 
 	.navbar-header .navbar-brand {
 		img {
-			max-width: 170px;
+			max-width: 250px;
+			@media (max-width:1199px) {
+				max-width: 170px;
+			}
 		}
 	}
 
@@ -1477,18 +1472,12 @@
 @media(max-width: 440px) {
 	.wpo-site-header .navbar-header .navbar-brand {
 		img {
-			max-width: 170px;
+			max-width: 120px;
 		}
 	}
 }
 
-@media(max-width: 370px) {
-	.wpo-site-header .navbar-header .navbar-brand {
-		img {
-			max-width: 140px;
-		}
-	}
-}
+
 
 
 @media(max-width: 1700px) {
@@ -1511,7 +1500,7 @@
 
 @media(max-width: 1400px) {
 	.wpo-site-header #navbar>ul>li>a {
-		padding: 30px 8px;
+		padding: 30px 9px;
 		font-size: 16px;
 	}
 
@@ -1519,7 +1508,7 @@
 
 @media(max-width: 1200px) {
 	.wpo-site-header #navbar>ul>li>a {
-		padding: 30px 6px;
+		padding: 30px 7px;
 		font-size: 16px;
 	}
 }
@@ -1640,10 +1629,14 @@
 
 
 // wpo-site-header-s1
-.wpo-site-header-s1,.wpo-site-header-s3 {
+.wpo-site-header-s1,.wpo-site-header-s3,.wpo-site-header-s5 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
 	z-index: 99;
 	background: #FBF8F2;
-
+	
 	@media (min-width: 1200px) {
 		padding: 0 100px;
 	}
@@ -1659,7 +1652,6 @@
 
 
 	#navbar>ul>li>a {
-		color: #323232;
 
 		&:hover,
 		&.active {
@@ -1680,7 +1672,7 @@
 
 	.header-right>div:last-child {
 		@media (max-width:1399px) {
-			margin: 0;
+			
 		}
 	}
 
@@ -1712,7 +1704,18 @@
 
 .wpo-site-header-s3 {
 	background: $white;
+	position: unset;
+	@media (min-width: 1200px) {
+		padding-top: 0px;
+		padding: 0 100px;
+	}
+
+
 }
 .wpo-site-header-s4 {
 	background: #E6F5F3;
+}
+
+.wpo-site-header-s5{
+	position: unset;
 }
